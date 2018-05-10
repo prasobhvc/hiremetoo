@@ -19,6 +19,7 @@ import { SidebarComponent } from './shell/layout/sidebar/sidebar.component';
 import { SignupComponent } from './shell/pages/signup/signup.component';
 import { LoginComponent } from './shell/pages/login/login.component';
 import { HmtComponent } from './shell/pages/hmt/hmt.component';
+import { JobsComponent } from './shell/pages/jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HmtComponent } from './shell/pages/hmt/hmt.component';
     SidebarComponent,
     SignupComponent,
     LoginComponent,
-    HmtComponent
+    HmtComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,

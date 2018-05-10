@@ -7,6 +7,7 @@ import { ProfileComponent } from './shell/pages/profile/profile.component';
 import { HistoryComponent } from './shell/pages/history/history.component';
 import { SupportComponent } from './shell/pages/support/support.component';
 import { OffersComponent } from './shell/pages/offers/offers.component';
+import { JobsComponent } from './shell/pages/jobs/jobs.component';
 
 export const routes: Routes = [
   {
@@ -20,6 +21,7 @@ export const routes: Routes = [
     component: HmtComponent,
     children: [
       { path: '', component: HomeComponent},
+      { path: 'jobs', component: JobsComponent, },
       { path: 'profile', component: ProfileComponent},
       { path: 'history', component: HistoryComponent},
       { path: 'support', component: SupportComponent},
