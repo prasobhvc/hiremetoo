@@ -1,0 +1,23 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><a routerLink="home">{{ title }}</a> </h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/hmt" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/hmt/profile" routerLinkActive="active">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/hmt/history" routerLinkActive="active">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/hmt/support" routerLinkActive="active">Support</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/hmt/offers" routerLinkActive="active">Offers</a>
+              </li>
+      </ul>
+    </nav>
+    <a class="btn btn-outline-primary">Sign up</a>
+  </div>
