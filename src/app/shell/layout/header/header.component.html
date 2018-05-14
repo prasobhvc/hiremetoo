@@ -22,5 +22,12 @@
               </li>
       </ul>
     </nav>
-    <a class="btn btn-outline-primary">Sign up</a>
+    <a 
+      class="btn btn-outline-primary" 
+      *ngIf="onCheckUserLoggedin(); else signoutTemplate"
+      [ngStyle]="{ borderColor: 'red'}"
+      [ngClass]="{ signout: loggedIn }">Sign out</a>
+    <ng-template #signoutTemplate>
+      <a class="btn btn-outline-primary"  [ngClass]="{ signin: !loggedIn }" [ngStyle]="{ borderColor: 'green'}">Sign in</a>
+    </ng-template>
   </div>

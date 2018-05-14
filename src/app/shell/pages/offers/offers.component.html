@@ -1,3 +1,9 @@
-<p>
-  offers works!
-</p>
+<div>
+  <button (click)="onShowPara()">Click here to see the offers</button>
+  <p *ngIf="showPara">Secret Password: tura</p>
+</div>
+<hr>
+<input type="text" [(ngModel)]="arrItem"/><button (click)="addItemArray()">Log</button>
+<ul>
+  <li *ngFor="let arr of arr">{{ arr }}</li>
+</ul>

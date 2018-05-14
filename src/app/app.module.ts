@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SearchVendorComponent } from './components/search-vendor/search-vendor.component';
@@ -20,6 +21,7 @@ import { SignupComponent } from './shell/pages/signup/signup.component';
 import { LoginComponent } from './shell/pages/login/login.component';
 import { HmtComponent } from './shell/pages/hmt/hmt.component';
 import { JobsComponent } from './shell/pages/jobs/jobs.component';
+import { AlertComponent } from './core/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -39,10 +41,12 @@ import { JobsComponent } from './shell/pages/jobs/jobs.component';
     SignupComponent,
     LoginComponent,
     HmtComponent,
-    JobsComponent
+    JobsComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
